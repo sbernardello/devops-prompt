@@ -1,0 +1,3 @@
+@echo off
+echo Building image...
+docker buildx build -f Dockerfile -t devops-tools --platform linux/amd64 . --load
