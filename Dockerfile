@@ -3,7 +3,7 @@ FROM debian
 RUN apt update && \
     apt install -y curl unzip zip gpg sudo wget \
         build-essential procps curl file git \
-        vim nano micro kubernetes-cli
+        vim nano micro kubernetes-client
 
 # Setup AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
