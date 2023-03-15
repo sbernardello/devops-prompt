@@ -1,9 +1,12 @@
 # Run commands on a local folder using a linux container
 
-Example
+NOTE: The configuration files (aws, aws-vault etc) are mapped from the $HOME/.devoptools local folder
+
+#### Usage
 
 ```bash
-# example
-# preload aws env using aws-vault and run sops to edit a local encrypted file
-aws-vault exec aws-eu -- ./run.sh sops secrets.env
+
+./run.sh aws-vault add aws-profile
+
+./run.sh sops secrets.env
 ```
